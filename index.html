@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>School Website</title>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">My School</h1>
+    <div class="space-x-6">
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#extracurriculars" class="hover:text-blue-500">Extracurriculars</a>
+      <a href="#academics" class="hover:text-blue-500">Academics</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-24 text-center">
+    <h2 class="text-4xl font-bold mb-4">Welcome to Our School</h2>
+    <p class="text-lg">A place where students grow, learn, and achieve excellence.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-8 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4 text-center">About Us</h3>
+    <p class="text-center text-gray-700">Our school focuses on academic excellence, creativity, and character
+      development. We provide an engaging environment for students to thrive in all aspects of life.</p>
+  </section>
+
+  <!-- Extracurriculars Section -->
+  <section id="extracurriculars" class="py-16 bg-white px-8">
+    <h3 class="text-3xl font-bold mb-6 text-center">Extracurricular Activities</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-6 bg-gray-100 rounded-xl shadow">
+        <h4 class="text-xl font-semibold mb-2">Sports</h4>
+        <p>Basketball, soccer, track, swimming, and more competitive teams.</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-xl shadow">
+        <h4 class="text-xl font-semibold mb-2">Music & Arts</h4>
+        <p>Choir, orchestra, theater, painting club, and creative workshops.</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-xl shadow">
+        <h4 class="text-xl font-semibold mb-2">STEM Clubs</h4>
+        <p>Robotics, coding club, science fair teams, engineering workshops.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics Section -->
+  <section id="academics" class="py-16 px-8 bg-gray-50">
+    <h3 class="text-3xl font-bold mb-6 text-center">Academic Programs</h3>
+    <div class="max-w-4xl mx-auto space-y-6">
+      <div class="p-6 bg-white shadow rounded-xl">
+        <h4 class="text-xl font-semibold mb-2">Elementary School</h4>
+        <p>Foundational subjects, creative play, reading programs, and interactive learning.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded-xl">
+        <h4 class="text-xl font-semibold mb-2">Middle School</h4>
+        <p>Advanced STEM courses, project‑based learning, and leadership development.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded-xl">
+        <h4 class="text-xl font-semibold mb-2">High School</h4>
+        <p>AP courses, college prep, research opportunities, and specialized electives.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-8">
+    <h3 class="text-3xl font-bold mb-4 text-center">Contact Us</h3>
+    <div class="max-w-xl mx-auto bg-white p-6 shadow rounded-xl">
+      <form id="contactForm" class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" required>
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded" required>
+        <textarea placeholder="Message" class="w-full p-3 border rounded h-32"></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Send Message</button>
+      </form>
+      <p id="successMessage" class="text-green-600 mt-4 hidden text-center font-semibold">Message sent!</p>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const success = document.getElementById('successMessage');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      success.classList.remove('hidden');
+      form.reset();
+    });
+  </script>
+</body>
+
+</html>
