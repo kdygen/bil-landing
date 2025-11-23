@@ -4,98 +4,341 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>School Website</title>
+  <title>Excellence Academy</title>
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+  </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
-  <!-- Navbar -->
-  <nav class="bg-white shadow p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Your School</h1>
-    <div class="space-x-6">
-      <a href="#about" class="hover:text-blue-500">About</a>
-      <a href="#extracurriculars" class="hover:text-blue-500">Extracurriculars</a>
-      <a href="#academics" class="hover:text-blue-500">Academics</a>
-      <a href="#contact" class="hover:text-blue-500">Contact</a>
+<body class="bg-gray-50 text-gray-800">
+  <header class="border-b border-gray-200 bg-white/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="h-11 w-11 rounded-full bg-blue-600 text-white grid place-items-center font-semibold text-lg">EA</div>
+        <div>
+          <div class="text-lg font-semibold text-gray-900">Excellence Academy</div>
+          <div class="text-sm text-gray-500">Inspiring Future Leaders</div>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#programs" class="hover:text-blue-600">Programs</a>
+        <a href="#news" class="hover:text-blue-600">News</a>
+        <a href="#faculty" class="hover:text-blue-600">Faculty</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <button class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-gray-900 text-white text-sm font-semibold shadow-sm hover:bg-gray-800">Apply Now</button>
     </div>
-  </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="bg-blue-600 text-white py-24 text-center">
-    <h2 class="text-4xl font-bold mb-4">Welcome to Our School</h2>
-    <p class="text-lg">A place where students grow, learn, and achieve excellence.</p>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-16 px-8 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-bold mb-4 text-center">About Us</h3>
-    <p class="text-center text-gray-700">Our school focuses on academic excellence, creativity, and character
-      development. We provide an engaging environment for students to thrive in all aspects of life.</p>
-  </section>
-
-  <!-- Extracurriculars Section -->
-  <section id="extracurriculars" class="py-16 bg-white px-8">
-    <h3 class="text-3xl font-bold mb-6 text-center">Extracurricular Activities</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="p-6 bg-gray-100 rounded-xl shadow">
-        <h4 class="text-xl font-semibold mb-2">Sports</h4>
-        <p>Basketball, soccer, track, swimming, and more competitive teams.</p>
+  <main>
+    <!-- Hero -->
+    <section id="home" class="relative isolate overflow-hidden">
+      <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/75 to-blue-800/75 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1519455953755-af066f52f1ea?auto=format&fit=crop&w=2000&q=80" alt="School campus" class="w-full h-full object-cover">
       </div>
-      <div class="p-6 bg-gray-100 rounded-xl shadow">
-        <h4 class="text-xl font-semibold mb-2">Music & Arts</h4>
-        <p>Choir, orchestra, theater, painting club, and creative workshops.</p>
+      <div class="relative z-20 max-w-6xl mx-auto px-4 py-28 text-center text-white">
+        <p class="text-sm font-medium uppercase tracking-wide text-blue-100 mb-4">Welcome to Excellence Academy</p>
+        <h1 class="text-3xl md:text-4xl font-semibold leading-tight max-w-3xl mx-auto">Empowering students to achieve their full potential through innovative education and character development</h1>
+        <div class="mt-8">
+          <a href="#programs" class="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-md text-sm font-semibold shadow-lg shadow-black/20">
+            Explore Programs
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
-      <div class="p-6 bg-gray-100 rounded-xl shadow">
-        <h4 class="text-xl font-semibold mb-2">STEM Clubs</h4>
-        <p>Robotics, coding club, science fair teams, engineering workshops.</p>
+    </section>
+
+    <!-- About + Stats -->
+    <section id="about" class="py-16 px-4">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-xl font-semibold text-gray-900">About Excellence Academy</h2>
+        <p class="mt-4 text-gray-600 leading-relaxed">For over three decades, Excellence Academy has been a beacon of educational excellence, nurturing young minds and shaping future leaders through comprehensive academic programs and character-building activities.</p>
+      </div>
+      <div class="max-w-6xl mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="h-11 w-11 rounded-xl bg-blue-50 text-blue-600 grid place-items-center text-xl mb-4">👥</div>
+          <div class="text-2xl font-semibold text-gray-900">1,200+</div>
+          <div class="text-sm text-gray-500 mt-1">Students</div>
+        </div>
+        <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="h-11 w-11 rounded-xl bg-green-50 text-green-600 grid place-items-center text-xl mb-4">📘</div>
+          <div class="text-2xl font-semibold text-gray-900">25+</div>
+          <div class="text-sm text-gray-500 mt-1">Programs</div>
+        </div>
+        <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="h-11 w-11 rounded-xl bg-blue-50 text-blue-600 grid place-items-center text-xl mb-4">🏅</div>
+          <div class="text-2xl font-semibold text-gray-900">50+</div>
+          <div class="text-sm text-gray-500 mt-1">Awards</div>
+        </div>
+        <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="h-11 w-11 rounded-xl bg-rose-50 text-rose-500 grid place-items-center text-xl mb-4">💙</div>
+          <div class="text-2xl font-semibold text-gray-900">30+</div>
+          <div class="text-sm text-gray-500 mt-1">Years of Excellence</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission / Vision with Gallery -->
+    <section class="py-12 px-4">
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900">Our Mission</h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">To provide a nurturing environment where every student can discover their passions, develop their talents, and grow into confident, compassionate, and capable individuals ready to make a positive impact on the world.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900">Our Vision</h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">To be recognized as a leading educational institution that sets the standard for academic excellence, innovation, and character development, preparing students for success in an ever-changing global landscape.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80" alt="Classroom" class="rounded-2xl shadow-md object-cover h-44 w-full">
+          <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=800&q=80" alt="Library" class="rounded-2xl shadow-md object-cover h-44 w-full">
+          <img src="https://images.unsplash.com/photo-1582719478248-54e9f2af35be?auto=format&fit=crop&w=800&q=80" alt="Science lab" class="rounded-2xl shadow-md object-cover h-44 w-full">
+          <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80" alt="Athletics field" class="rounded-2xl shadow-md object-cover h-44 w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" class="py-16 px-4 bg-white">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-xl font-semibold text-gray-900">Our Programs</h2>
+        <p class="mt-3 text-gray-600 leading-relaxed">We offer a diverse range of academic and extracurricular programs designed to develop well-rounded students prepared for future success.</p>
+      </div>
+      <div class="max-w-6xl mx-auto mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
+          <div class="h-11 w-11 rounded-xl bg-blue-50 text-blue-600 grid place-items-center text-xl mb-4">🎓</div>
+          <h3 class="text-base font-semibold text-gray-900">Elementary Education</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Building strong foundations in core subjects with hands-on learning experiences.</p>
+        </div>
+        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
+          <div class="h-11 w-11 rounded-xl bg-emerald-50 text-emerald-600 grid place-items-center text-xl mb-4">🧪</div>
+          <h3 class="text-base font-semibold text-gray-900">STEM Programs</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Advanced mathematics, science, technology, and engineering curriculum.</p>
+        </div>
+        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
+          <div class="h-11 w-11 rounded-xl bg-purple-50 text-purple-600 grid place-items-center text-xl mb-4">🎨</div>
+          <h3 class="text-base font-semibold text-gray-900">Arts & Creativity</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Nurturing artistic talents through visual arts, drama, and creative expression.</p>
+        </div>
+        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
+          <div class="h-11 w-11 rounded-xl bg-orange-50 text-orange-500 grid place-items-center text-xl mb-4">🌐</div>
+          <h3 class="text-base font-semibold text-gray-900">Language Studies</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Comprehensive language programs including Spanish, French, and Mandarin.</p>
+        </div>
+        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
+          <div class="h-11 w-11 rounded-xl bg-cyan-50 text-cyan-600 grid place-items-center text-xl mb-4">🔬</div>
+          <h3 class="text-base font-semibold text-gray-900">Advanced Sciences</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">State-of-the-art laboratory facilities for biology, chemistry, and physics.</p>
+        </div>
+        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
+          <div class="h-11 w-11 rounded-xl bg-pink-50 text-pink-500 grid place-items-center text-xl mb-4">🎵</div>
+          <h3 class="text-base font-semibold text-gray-900">Music & Performance</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Instrumental and vocal music programs with regular performances and competitions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="py-16 px-4 bg-gray-50">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-xl font-semibold text-gray-900">Latest News & Events</h2>
+        <p class="mt-3 text-gray-600 leading-relaxed">Stay updated with the latest happenings, achievements, and upcoming events at Excellence Academy.</p>
+      </div>
+      <div class="max-w-6xl mx-auto mt-10 grid gap-4 md:grid-cols-2">
+        <article class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center justify-between text-sm text-gray-500">
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-semibold">Achievement</span>
+            <span class="inline-flex items-center gap-2">📅 <span>November 18, 2025</span></span>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900">Science Fair Winners Announced</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Our students swept the regional science fair with three first-place awards in different categories.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-blue-600" href="#">Read More →</a>
+        </article>
+        <article class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center justify-between text-sm text-gray-500">
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-semibold">Facilities</span>
+            <span class="inline-flex items-center gap-2">📅 <span>November 15, 2025</span></span>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900">New STEM Laboratory Opening</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">State-of-the-art STEM lab to open next month with cutting-edge equipment and technology.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-blue-600" href="#">Read More →</a>
+        </article>
+        <article class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center justify-between text-sm text-gray-500">
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-semibold">Events</span>
+            <span class="inline-flex items-center gap-2">📅 <span>November 10, 2025</span></span>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900">Winter Concert Schedule Released</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Join us for our annual winter concert series featuring performances from all grade levels.</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-blue-600" href="#">Read More →</a>
+        </article>
+        <article class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center justify-between text-sm text-gray-500">
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-semibold">Sports</span>
+            <span class="inline-flex items-center gap-2">📅 <span>November 5, 2025</span></span>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900">Basketball Team Championship Victory</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Congratulations to our varsity basketball team for winning the district championship!</p>
+          <a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-blue-600" href="#">Read More →</a>
+        </article>
+      </div>
+      <div class="text-center mt-8">
+        <a href="#" class="inline-flex items-center px-5 py-2.5 rounded-full border border-gray-300 bg-white text-sm font-semibold text-gray-900 shadow-sm hover:border-gray-400">View All News</a>
+      </div>
+    </section>
+
+    <!-- Faculty -->
+    <section id="faculty" class="py-16 px-4 bg-white">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-xl font-semibold text-gray-900">Our Faculty</h2>
+        <p class="mt-3 text-gray-600 leading-relaxed">Meet our dedicated team of educators who are committed to inspiring and guiding students on their journey to excellence.</p>
+      </div>
+      <div class="max-w-6xl mx-auto mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm text-center">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Dr. Sarah Johnson" class="mx-auto h-28 w-28 rounded-full object-cover shadow">
+          <h3 class="mt-4 text-base font-semibold text-gray-900">Dr. Sarah Johnson</h3>
+          <p class="text-sm text-gray-600">Principal</p>
+          <a href="#" class="mt-3 inline-flex items-center justify-center gap-2 text-sm font-semibold text-blue-600">✉️ Contact</a>
+        </div>
+        <div class="rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm text-center">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Prof. Michael Chen" class="mx-auto h-28 w-28 rounded-full object-cover shadow">
+          <h3 class="mt-4 text-base font-semibold text-gray-900">Prof. Michael Chen</h3>
+          <p class="text-sm text-gray-600">Head of STEM</p>
+          <a href="#" class="mt-3 inline-flex items-center justify-center gap-2 text-sm font-semibold text-blue-600">✉️ Contact</a>
+        </div>
+        <div class="rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm text-center">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Ms. Emily Rodriguez" class="mx-auto h-28 w-28 rounded-full object-cover shadow">
+          <h3 class="mt-4 text-base font-semibold text-gray-900">Ms. Emily Rodriguez</h3>
+          <p class="text-sm text-gray-600">Arts Director</p>
+          <a href="#" class="mt-3 inline-flex items-center justify-center gap-2 text-sm font-semibold text-blue-600">✉️ Contact</a>
+        </div>
+        <div class="rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm text-center">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Dr. James Williams" class="mx-auto h-28 w-28 rounded-full object-cover shadow">
+          <h3 class="mt-4 text-base font-semibold text-gray-900">Dr. James Williams</h3>
+          <p class="text-sm text-gray-600">Director of Athletics</p>
+          <a href="#" class="mt-3 inline-flex items-center justify-center gap-2 text-sm font-semibold text-blue-600">✉️ Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 px-4 bg-gray-50">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-xl font-semibold text-gray-900">Contact Us</h2>
+        <p class="mt-3 text-gray-600 leading-relaxed">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      </div>
+      <div class="max-w-6xl mx-auto mt-10 grid lg:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm space-y-4">
+          <div class="flex items-start gap-4 p-4 rounded-xl bg-blue-50">
+            <div class="h-10 w-10 rounded-xl bg-white text-blue-600 grid place-items-center text-lg shadow-sm">📍</div>
+            <div>
+              <p class="text-gray-900 font-semibold">123 Education Street</p>
+              <p class="text-gray-600 text-sm">Springfield, ST 12345</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-4 rounded-xl bg-blue-50">
+            <div class="h-10 w-10 rounded-xl bg-white text-blue-600 grid place-items-center text-lg shadow-sm">📞</div>
+            <div>
+              <p class="text-gray-900 font-semibold">(555) 123-4567</p>
+              <p class="text-gray-600 text-sm">Main Office</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-4 rounded-xl bg-blue-50">
+            <div class="h-10 w-10 rounded-xl bg-white text-blue-600 grid place-items-center text-lg shadow-sm">✉️</div>
+            <div>
+              <p class="text-gray-900 font-semibold">info@excellenceacademy.edu</p>
+              <p class="text-gray-600 text-sm">General Inquiries</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-4 rounded-xl bg-blue-50">
+            <div class="h-10 w-10 rounded-xl bg-white text-blue-600 grid place-items-center text-lg shadow-sm">⏰</div>
+            <div>
+              <p class="text-gray-900 font-semibold">Monday – Friday</p>
+              <p class="text-gray-600 text-sm">8:00 AM - 4:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <form class="space-y-4">
+            <div>
+              <label class="text-sm font-semibold text-gray-800">Name</label>
+              <input type="text" class="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none" placeholder="Your name">
+            </div>
+            <div>
+              <label class="text-sm font-semibold text-gray-800">Email</label>
+              <input type="email" class="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none" placeholder="your.email@example.com">
+            </div>
+            <div>
+              <label class="text-sm font-semibold text-gray-800">Subject</label>
+              <input type="text" class="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none" placeholder="What is this regarding?">
+            </div>
+            <div>
+              <label class="text-sm font-semibold text-gray-800">Message</label>
+              <textarea rows="4" class="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none" placeholder="Your message..."></textarea>
+            </div>
+            <button type="button" class="w-full bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 rounded-lg shadow">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1c3f93] text-white mt-16">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid gap-8 md:grid-cols-4">
+      <div class="space-y-3">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-full bg-white text-blue-700 grid place-items-center font-semibold">EA</div>
+          <div>
+            <div class="text-lg font-semibold">Excellence Academy</div>
+            <p class="text-sm text-blue-100">Inspiring Future Leaders</p>
+          </div>
+        </div>
+        <p class="text-sm text-blue-100 leading-relaxed">Inspiring future leaders through quality education and character development.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-blue-100">
+          <li><a href="#about" class="hover:text-white">About Us</a></li>
+          <li><a href="#programs" class="hover:text-white">Programs</a></li>
+          <li><a href="#news" class="hover:text-white">Admissions</a></li>
+          <li><a href="#" class="hover:text-white">Calendar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Resources</h4>
+        <ul class="space-y-2 text-sm text-blue-100">
+          <li><a href="#" class="hover:text-white">Parent Portal</a></li>
+          <li><a href="#" class="hover:text-white">Student Portal</a></li>
+          <li><a href="#" class="hover:text-white">Library</a></li>
+          <li><a href="#" class="hover:text-white">Employment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Follow Us</h4>
+        <div class="flex gap-3">
+          <a href="#" class="h-10 w-10 rounded-lg bg-white/10 text-white grid place-items-center hover:bg-white/20">f</a>
+          <a href="#" class="h-10 w-10 rounded-lg bg-white/10 text-white grid place-items-center hover:bg-white/20">🐦</a>
+          <a href="#" class="h-10 w-10 rounded-lg bg-white/10 text-white grid place-items-center hover:bg-white/20">📸</a>
+          <a href="#" class="h-10 w-10 rounded-lg bg-white/10 text-white grid place-items-center hover:bg-white/20">▶️</a>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- Academics Section -->
-  <section id="academics" class="py-16 px-8 bg-gray-50">
-    <h3 class="text-3xl font-bold mb-6 text-center">Academic Programs</h3>
-    <div class="max-w-4xl mx-auto space-y-6">
-      <div class="p-6 bg-white shadow rounded-xl">
-        <h4 class="text-xl font-semibold mb-2">Elementary School</h4>
-        <p>Foundational subjects, creative play, reading programs, and interactive learning.</p>
-      </div>
-      <div class="p-6 bg-white shadow rounded-xl">
-        <h4 class="text-xl font-semibold mb-2">Middle School</h4>
-        <p>Advanced STEM courses, project‑based learning, and leadership development.</p>
-      </div>
-      <div class="p-6 bg-white shadow rounded-xl">
-        <h4 class="text-xl font-semibold mb-2">High School</h4>
-        <p>AP courses, college prep, research opportunities, and specialized electives.</p>
-      </div>
+    <div class="border-t border-white/10">
+      <p class="text-center text-sm text-blue-100 py-4">© 2025 Excellence Academy. All rights reserved.</p>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 px-8">
-    <h3 class="text-3xl font-bold mb-4 text-center">Contact Us</h3>
-    <div class="max-w-xl mx-auto bg-white p-6 shadow rounded-xl">
-      <form id="contactForm" class="space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" required>
-        <input type="email" placeholder="Email" class="w-full p-3 border rounded" required>
-        <textarea placeholder="Message" class="w-full p-3 border rounded h-32"></textarea>
-        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Send Message</button>
-      </form>
-      <p id="successMessage" class="text-green-600 mt-4 hidden text-center font-semibold">Message sent!</p>
-    </div>
-  </section>
-
-  <!-- JavaScript -->
-  <script>
-    const form = document.getElementById('contactForm');
-    const success = document.getElementById('successMessage');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      success.classList.remove('hidden');
-      form.reset();
-    });
-  </script>
+  </footer>
 </body>
 
 </html>
