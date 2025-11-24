@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Excellence Academy</title>
@@ -131,45 +133,94 @@
         <h2 class="text-xl font-semibold text-gray-900">Our Programs</h2>
         <p class="mt-3 text-gray-600 leading-relaxed">We offer a diverse range of academic and extracurricular programs
           designed to develop well-rounded students prepared for future success.</p>
-      </div>
-      <div class="max-w-6xl mx-auto mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
-          <div class="h-11 w-11 rounded-xl bg-blue-50 text-blue-600 grid place-items-center text-xl mb-4">🎓</div>
-          <h3 class="text-base font-semibold text-gray-900">Elementary Education</h3>
-          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Building strong foundations in core subjects with
-            hands-on learning experiences.</p>
-        </div>
-        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
-          <div class="h-11 w-11 rounded-xl bg-emerald-50 text-emerald-600 grid place-items-center text-xl mb-4">🧪</div>
-          <h3 class="text-base font-semibold text-gray-900">STEM Programs</h3>
-          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Advanced mathematics, science, technology, and
-            engineering curriculum.</p>
-        </div>
-        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
-          <div class="h-11 w-11 rounded-xl bg-purple-50 text-purple-600 grid place-items-center text-xl mb-4">🎨</div>
-          <h3 class="text-base font-semibold text-gray-900">Arts & Creativity</h3>
-          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Nurturing artistic talents through visual arts, drama,
-            and creative expression.</p>
-        </div>
-        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
-          <div class="h-11 w-11 rounded-xl bg-orange-50 text-orange-500 grid place-items-center text-xl mb-4">🌐</div>
-          <h3 class="text-base font-semibold text-gray-900">Language Studies</h3>
-          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Comprehensive language programs including Spanish,
-            French, and Mandarin.</p>
-        </div>
-        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
-          <div class="h-11 w-11 rounded-xl bg-cyan-50 text-cyan-600 grid place-items-center text-xl mb-4">🔬</div>
-          <h3 class="text-base font-semibold text-gray-900">Advanced Sciences</h3>
-          <p class="mt-2 text-gray-600 text-sm leading-relaxed">State-of-the-art laboratory facilities for biology,
-            chemistry, and physics.</p>
-        </div>
-        <div class="border border-gray-200 rounded-2xl bg-gray-50 p-6 shadow-sm">
-          <div class="h-11 w-11 rounded-xl bg-pink-50 text-pink-500 grid place-items-center text-xl mb-4">🎵</div>
-          <h3 class="text-base font-semibold text-gray-900">Music & Performance</h3>
-          <p class="mt-2 text-gray-600 text-sm leading-relaxed">Instrumental and vocal music programs with regular
-            performances and competitions.</p>
-        </div>
-      </div>
+          <div class="slider-wrapper">
+  
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                  <div class="program-card">
+                    <img src="https://www.frontiersin.org/files/special%20topics/35761/thumb_400.jpg" alt="Elementary Education" class="card-image">
+                    <div class="card-content">
+                      <div class="emoji-icon">🎓</div>
+                      <h3>Elementary Education</h3>
+                      <p>Building strong foundations in core subjects with hands-on learning experiences.</p>
+                      <button class="explore-button">Explore</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="program-card">
+                    <img src="https://www.frontiersin.org/files/special%20topics/35761/thumb_400.jpg" alt="STEM Programs" class="card-image">
+                    <div class="card-content">
+                      <div class="emoji-icon">🔬</div>
+                      <h3>STEM Programs</h3>
+                      <p>Advanced mathematics, science, technology, and engineering curriculum.</p>
+                      <button class="explore-button">Explore</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="program-card">
+                    <img src="https://www.frontiersin.org/files/special%20topics/35761/thumb_400.jpg" alt="Arts & Creativity" class="card-image">
+                    <div class="card-content">
+                      <div class="emoji-icon">🎨</div>
+                      <h3>Arts & Creativity</h3>
+                      <p>Nurturing artistic talents through visual arts, drama, and creative expression.</p>
+                      <button class="explore-button">Explore</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="program-card">
+                    <img src="https://www.frontiersin.org/files/special%20topics/35761/thumb_400.jpg" alt="Language Studies" class="card-image">
+                    <div class="card-content">
+                      <div class="emoji-icon">🌐</div>
+                      <h3>Language Studies</h3>
+                      <p>Comprehensive language programs including Spanish, French, and Mandarin.</p>
+                      <button class="explore-button">Explore</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="program-card">
+                    <img src="https://www.frontiersin.org/files/special%20topics/35761/thumb_400.jpg" alt="Advanced Sciences" class="card-image">
+                    <div class="card-content">
+                      <div class="emoji-icon">🧪</div>
+                      <h3>Advanced Sciences</h3>
+                      <p>State-of-the-art laboratory facilities for biology, chemistry, and physics.</p>
+                      <button class="explore-button">Explore</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="program-card">
+                    <img src="https://www.frontiersin.org/files/special%20topics/35761/thumb_400.jpg" alt="Music & Performance" class="card-image">
+                    <div class="card-content">
+                      <div class="emoji-icon">🎵</div>
+                      <h3>Music & Performance</h3>
+                      <p>Instrumental and vocal music programs with regular performances and competitions.</p>
+                      <button class="explore-button">Explore</button>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+              
+              <div class="swiper-pagination"></div>
+              
+            </div>
+            
+            <div class="swiper-button-prev custom-prev"></div>
+            <div class="swiper-button-next custom-next"></div>
+            
+          </div>
+</div>
     </section>
 
     <!-- News -->
@@ -402,6 +453,173 @@
       <p class="text-center text-sm text-blue-100 py-4">© 2025 Excellence Academy. All rights reserved.</p>
     </div>
   </footer>
+  <!-- Инициализация слайдера -->
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 20, 
+      loop: true,
+      
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        }
+      },
+      
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        appendTo: '.slider-wrapper', 
+      },
+    });
+    </script>
+  
+  <!-- Стили -->
+  <style>
+    /* 1. СТИЛИЗАЦИЯ КНОПКИ "EXPLORE" */
+    .explore-button {
+        /* Базовый стиль */
+        background-color: #2d78ff; /* Акцентный синий цвет */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px; /* Мягкие углы */
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.1s ease;
+        
+        /* Расположение */
+        margin-top: auto; /* Важно: прижимает кнопку к низу .card-content */
+        align-self: flex-start; /* Выравнивает кнопку по левому краю внутри flex-контейнера */
+    }
+    
+    /* Эффект при наведении */
+    .explore-button:hover {
+        background-color: #1f5cc7; /* Чуть темнее при наведении */
+    }
+    
+    /* --- КОРРЕКТИРОВКА РАСПОЛОЖЕНИЯ ВНУТРИ КАРТОЧКИ --- */
+    .card-content {
+        padding: 0 25px 25px 25px; 
+        flex-grow: 1; 
+        display: flex;
+        flex-direction: column; /* Элементы идут сверху вниз */
+        align-items: flex-start;
+        text-align: left;
+        /* Убедимся, что h3 и p не занимают все место, чтобы кнопка могла прижаться вниз */
+    }
+    
+    /* Убираем отступ снизу у последнего элемента перед кнопкой, если он есть */
+    .card-content p {
+      color: #666666;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px; /* Отступ между текстом и кнопкой */
+    }
+    
+    
+    /* --- ОСНОВНЫЕ СТИЛИ СЛАЙДЕРА (Без изменений) --- */
+    
+    .slider-wrapper {
+      position: relative; 
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 50px; 
+    }
+    
+    .mySwiper {
+      padding: 20px 0 40px 0; 
+    }
+    
+    .program-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 320px;
+      height: 450px; 
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e0e6ed;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .program-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-image {
+        width: 100%;
+        height: 180px; 
+        object-fit: cover;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .emoji-icon {
+      font-size: 2.5rem; 
+      margin-bottom: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f7ff; 
+    }
+    
+    .program-card h3 {
+      color: #333333;
+      font-size: 1.35rem;
+      margin-top: 0;
+      margin-bottom: 8px; 
+    }
+    
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+    
+    /* Стили навигации */
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      color: #2d78ff !important;
+      background-color: #ffffff;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%; 
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .swiper-button-prev {
+      left: 0; 
+    }
+    
+    .swiper-button-next {
+      right: 0;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: #2d78ff !important; 
+    }
+    </style>
 </body>
 
 </html>
